@@ -7,7 +7,7 @@ const { MongoClient, ServerApiVersion } = require('mongodb');
 
 // Environment variables
 const port = process.env.PORT || 9000;
-const uri = process.env.MONGO_URI || "mongodb://varshavr23:9866899958@cbit-shard-00-00.xfxma.mongodb.net:27017,cbit-shard-00-01.xfxma.mongodb.net:27017,cbit-shard-00-02.xfxma.mongodb.net:27017/?ssl=true&replicaSet=atlas-h48f84-shard-0&authSource=admin&retryWrites=true&w=majority&appName=cbit";
+const uri = process.env.MONGO_URI || "mongodb://username:password@cbit-shard-00-00.xfxma.mongodb.net:27017,cbit-shard-00-01.xfxma.mongodb.net:27017,cbit-shard-00-02.xfxma.mongodb.net:27017/?ssl=true&replicaSet=atlas-h48f84-shard-0&authSource=admin&retryWrites=true&w=majority&appName=cbit";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
